@@ -489,7 +489,7 @@ module.exports = (grunt) ->
               'freedom-social-firebase/firebase.js'
               'freedom-social-firebase/firebase-social-provider.js'
               'freedom-social-firebase/facebook-social-provider.js'
-              'freedom-social-quiver/social2.quiver.js'
+              'freedom-social-quiver/socketio.quiver.js'
               'freedom-port-control/port-control.js'
               'freedom-port-control/port-control.json'
 
@@ -532,7 +532,7 @@ module.exports = (grunt) ->
               'data/freedom-social-firebase/firebase.js'
               'data/freedom-social-firebase/firebase-social-provider.js'
               'data/freedom-social-firebase/facebook-social-provider.js'
-              'data/freedom-social-quiver/social2.quiver.js'
+              'data/freedom-social-quiver/socketio.quiver.js'
               'data/freedom-port-control/port-control.js'
               'data/freedom-port-control/port-control.json'
 
@@ -694,7 +694,7 @@ module.exports = (grunt) ->
               dest: chromeAppDevPath + '/freedom-social-firebase'
             },
             {
-              expand: true, cwd: 'node_modules/freedom-social-quiver/src/',  #FIXME need a dist directory
+              expand: true, cwd: 'node_modules/freedom-social-quiver/dist/',
               src: ['**']
               dest: chromeAppDevPath + '/freedom-social-quiver'
             },
@@ -761,7 +761,7 @@ module.exports = (grunt) ->
               dest: firefoxDevPath + '/data/freedom-social-firebase'
             },
             {
-              expand: true, cwd: 'node_modules/freedom-social-quiver/src/',
+              expand: true, cwd: 'node_modules/freedom-social-quiver/dist/',
               src: ['**']
               dest: firefoxDevPath + '/data/freedom-social-quiver'
             },

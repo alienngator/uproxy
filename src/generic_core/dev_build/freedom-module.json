@@ -16,7 +16,7 @@
       "api": "social2"
     },
     "SOCIAL-Quiver": {
-      "url": "../freedom-social-quiver/social2.quiver.json",
+      "url": "../freedom-social-quiver/socketio.quiver.json",
       "api": "social2"
     },
     "loggingcontroller": {
